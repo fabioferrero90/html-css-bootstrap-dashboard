@@ -10,8 +10,8 @@
 </head>
 <body>
   
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fs-5" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./img/duck.png" alt="Duck Logo" width="60px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +42,9 @@
   </header>
 
   <main>
-    <div class="row">
-      <div class="col-12 col-lg-9">
-        <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 col-xl-9">
           <div class="row py-4 px-lg-2">
             <div class="col-6">
               <h2 class="fs-1">Catalogo Libri</h2>
@@ -139,9 +139,60 @@
             </tbody>
           </table>
         </div>
-      </div>
-      <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div class="card my-4">
+            <div class="card-header bg-light fs-3">
+              Todo
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush border rounded">
+                <li class="list-group-item d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" />
+                  Chiamare segreteria
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" />
+                  Mandare avvisi prestiti scaduti
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" />
+                  Ordinare nuovi libri
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="card my-4">
+            <div class="card-header fs-3">
+              F.A.Q.
+            </div>
+            <div class="list-group list-group-flush m-3">
+              <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">
+                Come aggiungere un nuovo libro?
+                <span class="fas fa-chevron-down"></span>
+              </button>
+              <div class="collapse" id="faq1">
+                <div class="p-3">Per aggiungere un nuovo libro, vai alla sezione "Catalogo Libri" e clicca su "Aggiungi Libro".</div>
+              </div>
+              
+              <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                Come posso accedere all'anagrafica utenti?
+                <span class="fas fa-chevron-down"></span>
+              </button>
+              <div class="collapse" id="faq2">
+                <div class="p-3">L'anagrafica utenti è accessibile dal menù principale sotto "Anagrafica utenti".</div>
+              </div>
+              
+              <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                Posso usare questa dashboard da mobile?
+                <span class="fas fa-chevron-down"></span>
+              </button>
+              <div class="collapse" id="faq3">
+                <div class="p-3">Sì, la dashboard è ottimizzata per dispositivi mobili.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
