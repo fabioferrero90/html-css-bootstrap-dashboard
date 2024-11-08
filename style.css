@@ -1,0 +1,11 @@
+@media (max-width:576px) {
+  .offcanvas {
+    width:100vw !important;
+  }
+}
+
+@media (min-width:577px) {
+  .offcanvas {
+    width:50vw !important;
+  }
+}
